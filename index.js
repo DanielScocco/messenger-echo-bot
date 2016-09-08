@@ -51,24 +51,7 @@ function receivedMessage(event){
 
 	console.log("-->receivedMessage");
 
-	var messageText = message.text;
-
-	switch(messageText){
-		case 'image':
-			sendImageMessage(senderID);
-			break;
-		case 'button':
-			sendButtonMessage(senderID);
-			break;
-		case 'generic':
-			sendGenericMessage(senderID);
-			break;
-		case 'receipt':
-			sendReceiptMessage(senderID);
-			break;
-		default:
-			sendTextMessage(senderID,messageText);
-	}
+	sendTextMessage(senderID,messageText);
 }
 
 function receivedDeliveryConfirmation(event){
