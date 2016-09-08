@@ -2,8 +2,10 @@
 	"name": "ShoppingBot",
 	"version": "0.0.1",
 	"dependencies": {
-		"express":"~4.9",
-		"body-parser"},
+		"express":"^4.9",
+		"body-parser":"^1.15}",
+		"request":"^2.72"
+	}
 	"engines": {
 		"node": "0.8.x",
 		"npm": "1.1.x"
