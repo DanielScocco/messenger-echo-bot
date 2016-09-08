@@ -51,6 +51,8 @@ function receivedMessage(event){
 
 	console.log("-->receivedMessage");
 
+	var messageText = message.text;
+
 	sendTextMessage(senderID,messageText);
 }
 
