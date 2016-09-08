@@ -1,7 +1,5 @@
-var app = require('express').createServer();
-var bodyParser = require('body-parser');
-
-app.us(bodyParser.json());
+var express = require('express');
+var app = express(); 
 
 app.get('/',function(req,res) {
 	if(req.query['hub.verify_token']==='haha')
