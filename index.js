@@ -25,7 +25,7 @@ app.post('/',function(req,res){
 
 			//iterate over each mesaging event
 			pageEntry.messaging.forEach(function(messagingEvent){
-				if(messasingEvent.optin)
+				if(messagingEvent.optin)
 					receivedAuthentication(messagingEvent);
 				else if(messagingEvent.message)
 					receivedMessage(messagingEvent);
